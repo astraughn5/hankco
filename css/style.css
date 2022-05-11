@@ -1,4 +1,4 @@
-/* @media screen and (min-width: 767px){ */
+@media screen and (min-width: 855px){ 
 	html{
 		font-size: 100%;
 	}
@@ -49,7 +49,7 @@
 		font-weight: bold;
 		text-decoration: none;
 		font-size: 2rem;
-		min-width: 7rem; 
+		min-width: 5rem; 
 		color: white;
 		display: flex;
 		justify-content: center;
@@ -58,6 +58,9 @@
 		height: 100%;
 		width: 100%;
 		padding-left: 1rem;
+	}
+	.hamburger {
+		display: none;
 	}
 	 .nav-item {
 		display: flex;
@@ -209,12 +212,12 @@
 		font-size: 1.5rem;
 	}
 
-/* 
-@media screen and (max-width: 766px) {
+}
+/* <-------- Ipad Responsive Design ----------> */
+@media screen and (min-width: 624px) and (max-width: 854px){ 
 	html{
 		font-size: 100%;
 	}
-	
 	body {
 		font-size: .8rem;
 		margin: 0;
@@ -222,62 +225,426 @@
 		background: #FBF1EC;
 		font-family: 'Hind Siliguri',  sans-serif;
 	}
+	/* nav{
+		position: relative; 
+	} */
+	
+	/* <<<<<<--------- Navigation Styling ------>>>>>> */
 	header{
-		background-color: rgb(229,229,229);
-		position: relative;
+		background-color: black;
 	}
-	nav {
-		max-width: 70rem;
-		margin: 0 auto;
-		padding: 0 1rem;
-	}
-	ul {
+	.navbar{
 		display: flex;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		max-height: 4rem;
-		justify-content: center;
+		/* justify-content: space-between; */
+		align-items: center;
 	}
-	li {
+
+	.nav-links {
+		list-style: none;
+		display: flex;
+		align-content: center;
+		height: 100%;
+	}
+	.logo {
+		display: inline-block;
+		height: auto;
+    	width: auto;
+    	max-height: 73px;
+    	max-width: 250px;
+		vertical-align: top;
+		background-color: black;
+		/* margin-left: 1rem; */
+	}
+	.logo img{
+		align-self: left;
+		margin-left: 1rem;
+		border-right: white solid 1px;
+	}
+
+	.logo a {
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 2rem;
+		/* min-width: 5rem;  */
+		color: white;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		/* padding-left: 1rem; */
+	}
+	.hamburger {
+		display: none;
+	}
+	 .nav-item {
 		display: flex;
 		letter-spacing: 0.02rem;
 		font-size: 1rem;
-		align-self: center;
-		margin: 1.1rem 1rem;
-		padding: 0.2rem .6rem;
+		margin: 0;
+		padding: 0;
 		min-width: 5rem;
-
-	}
-	li a {
-		display: flex;
-		align-items: center;
+	} 
+	.nav-item a {
 		font-weight: bold;
 		text-decoration: none;
-		max-width: 10rem;
-		color: rgb(229,101,30);
-	}
-	.logo {
-		height: 7rem;
-	}
-	.box {
-		position: relative;
-		display: inline-block;
-		width: auto;
-		height: 4rem;
-		border-radius: 5px;
-		background-color: rgb(229,229,229);
-		/* box-shadow: 0 1px 2px rgba(0,0,0,0.15); */
-		/* transition: all 0.3s ease-in-out;
-		align-items: center;
-	}
-	.box:hover {
-		background-color: darkgrey;
-	}
-	h1{
+		min-width: 6rem; 
+		color: white;
 		display: flex;
 		justify-content: center;
-		font-size: 5rem;
-		color: green;
+		text-align: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		border-radius: 100px;
 	}
-} */ 
+	.nav-item a:hover{
+		background-color: white;
+		color: black;
+	}
+
+	 /* <------ Slogan Slide in -------> */
+	 h5{
+		animation-duration: 2.5s;
+		animation-name: slidein;
+		font-size: 1rem;
+		margin: 0;
+		padding: .33rem 0;
+		display: flex;
+		justify-content: center;
+		background-color: darkgrey;
+		color: white;
+	 }
+	 
+	 @keyframes slidein {
+		from {
+		  margin-left: 100%;
+		  width: 300%;
+		}
+	  
+		to {
+		  margin-left: 0%;
+		  width: 100%;
+		}
+	  }
+	
+	/* <----- Main Section Welcome Style -----> */
+
+	.flexContainer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	h1{
+		font-size: 6rem;
+		color: black;
+		margin: 2% 0 0 0;
+		text-align: center;
+	 }
+
+	 .coverPhotoResizing {
+		display: inline-block; 
+		max-height: 250px;
+		width: auto;
+		margin: 0 auto;
+		padding-top: -5rem;
+		border-radius: 10px;
+	 }
+
+	 .column{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1%;
+	}
+	/* <----- Services Section Style -----> */
+	main section{
+		background-color: lightgray;
+		border-radius: 5rem;
+	}
+
+	section h2 {
+		display: flex;
+		justify-content: center;
+		padding-top: 2%;
+		font-size: 2rem;
+	}
+	.twoColumn {
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		margin-top: 3%;
+	}
+	.centerIcon{
+		text-align: center;
+		max-height: auto;
+		padding: auto 0;
+	}
+	.serviceContainer{
+		max-width: 10rem;
+	}
+	
+
+
+
+
+
+	/* <----- Footer Style -----> */
+
+	footer{
+		background-color: black;
+		color: white;
+		margin: 0;
+		border: black solid 3px;
+	}
+	#hankCoLogo{
+		max-height: 100px;
+		display: flex;
+		margin: 0 auto;
+	}
+
+	footer span{
+		margin: .25rem 0;
+	}
+	footer span a {
+		text-decoration: none;
+		color: white;
+		border-radius: 100px;
+		margin: 3% 0;
+	}
+	footer span a:hover {
+		color: black;
+		background-color: white;
+	}
+	footer p {
+		margin: 0;
+	}
+	footer p a{
+		color: lightskyblue;
+	}
+	.largerFont{
+		font-size: 1.5rem;
+	}
+}
+
+/* <-------- Smaller Ipad & Phone Responsive Design ----------> */
+/* need to include the hamburger */
+@media screen and (max-width: 623px){ 
+	html{
+		font-size: 100%;
+	}
+	body {
+		font-size: .8rem;
+		margin: 0;
+		padding: 0;
+		background: #FBF1EC;
+		font-family: 'Hind Siliguri',  sans-serif;
+	}
+	/* nav{
+		position: relative; 
+	} */
+	
+	/* <<<<<<--------- Navigation Styling ------>>>>>> */
+	header{
+		background-color: black;
+	}
+	.navbar{
+		display: flex;
+		/* justify-content: space-between; */
+		align-items: center;
+	}
+
+	.nav-links {
+		list-style: none;
+		display: flex;
+		align-content: center;
+		height: 100%;
+	}
+	.logo {
+		display: inline-block;
+		height: auto;
+    	width: auto;
+    	max-height: 73px;
+    	max-width: 250px;
+		vertical-align: top;
+		background-color: black;
+		/* margin-left: 1rem; */
+	}
+	.logo img{
+		align-self: left;
+		margin-left: 1rem;
+		border-right: white solid 1px;
+	}
+
+	.logo a {
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 2rem;
+		/* min-width: 5rem;  */
+		color: white;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		/* padding-left: 1rem; */
+	}
+	.hamburger {
+		max-height: 50px;
+	}
+	 .nav-item {
+		display: none;
+		letter-spacing: 0.02rem;
+		font-size: 1rem;
+		margin: 0;
+		padding: 0;
+		min-width: 5rem;
+	} 
+	.nav-item a {
+		font-weight: bold;
+		text-decoration: none;
+		min-width: 6rem; 
+		color: white;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		border-radius: 100px;
+	}
+	.nav-item a:hover{
+		background-color: white;
+		color: black;
+	}
+
+	 /* <------ Slogan Slide in -------> */
+	 h5{
+		animation-duration: 2.5s;
+		animation-name: slidein;
+		font-size: .75rem;
+		text-align: center;
+		margin: 0;
+		padding: .33rem 0;
+		display: flex;
+		justify-content: center;
+		background-color: darkgrey;
+		color: white;
+	 }
+	 
+	 @keyframes slidein {
+		from {
+		  margin-left: 100%;
+		  width: 300%;
+		}
+	  
+		to {
+		  margin-left: 0%;
+		  width: 100%;
+		}
+	  }
+	
+	/* <----- Main Section Welcome Style -----> */
+
+	.flexContainer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	h1{
+		font-size: 3.5rem;
+		color: black;
+		margin: 2% 0 0 0;
+		text-align: center;
+	 }
+
+	 .coverPhotoResizing {
+		display: inline-block; 
+		max-height: 147px;
+		width: auto;
+		margin: 0 auto;
+		padding-top: -5rem;
+		border-radius: 10px;
+	 }
+
+	 .column{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1%;
+	}
+	/* <----- Services Section Style -----> */
+	main section{
+		background-color: lightgray;
+		border-radius: 3.5rem;
+		margin-bottom: 3%;
+	}
+
+	section h2 {
+		display: flex;
+		justify-content: center;
+		padding-top: 2%;
+		font-size: 2rem;
+	}
+	.twoColumn {
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		margin-top: 5%;
+	}
+	.centerIcon{
+		text-align: center;
+		max-height: auto;
+		padding: auto 0;
+	}
+	.serviceContainer{
+		max-width: 10rem;
+		margin-bottom: 2%;
+	}
+	
+
+
+
+
+
+	/* <----- Footer Style -----> */
+
+	footer{
+		background-color: black;
+		color: white;
+		margin: 0;
+		border: black solid 3px;
+	}
+	#hankCoLogo{
+		max-height: 100px;
+		display: flex;
+		margin: 0 auto;
+	}
+
+	footer span{
+		margin: .25rem 0;
+	}
+	footer span a {
+		text-decoration: none;
+		color: white;
+		border-radius: 100px;
+		margin: 3% 0;
+	}
+	footer span a:hover {
+		color: black;
+		background-color: white;
+	}
+	footer p {
+		margin: 0;
+	}
+	footer p a{
+		color: lightskyblue;
+	}
+	.largerFont{
+		font-size: 1.5rem;
+	}
+}
