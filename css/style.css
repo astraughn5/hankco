@@ -458,9 +458,10 @@
 
 	.nav-links {
 		list-style: none;
-		display: flex;
+		display: none;
 		align-content: center;
 		height: 100%;
+
 	}
 	.logo {
 		display: inline-block;
@@ -494,6 +495,10 @@
 	}
 	.hamburger {
 		max-height: 50px;
+		font-size: 3em;  
+		color: white;
+		justify-self: right;
+		margin: 0 3% 0 auto;
 	}
 	 .nav-item {
 		display: none;
