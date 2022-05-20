@@ -9,9 +9,6 @@
 		background: #FBF1EC;
 		font-family: 'Hind Siliguri',  sans-serif;
 	}
-	/* nav{
-		position: relative; 
-	} */
 	
 	/* <<<<<<--------- Navigation Styling ------>>>>>> */
 	header{
@@ -19,7 +16,6 @@
 	}
 	.navbar{
 		display: flex;
-		/* justify-content: space-between; */
 		align-items: center;
 	}
 
@@ -28,6 +24,7 @@
 		display: flex;
 		align-content: center;
 		height: 100%;
+		padding: 0;
 	}
 	.logo {
 		display: inline-block;
@@ -37,7 +34,6 @@
     	max-width: 250px;
 		vertical-align: top;
 		background-color: black;
-		/* margin-left: 1rem; */
 	}
 	.logo img{
 		align-self: left;
@@ -66,14 +62,13 @@
 		display: flex;
 		letter-spacing: 0.02rem;
 		font-size: 1rem;
-		margin: 0 1rem;
-		padding: 0 .6rem;
-		min-width: 5rem;
+		margin: 0 .5rem;
+		padding: 0 .3rem;
 	} 
 	.nav-item a {
 		font-weight: bold;
 		text-decoration: none;
-		min-width: 7rem; 
+		min-width: 5rem; 
 		color: white;
 		display: flex;
 		justify-content: center;
@@ -83,10 +78,18 @@
 		width: 100%;
 		border-radius: 100px;
 	}
-	.nav-item a:hover{
-		background-color: white;
-		color: black;
+	
+
+	#login, #signup {
+		border: 2px solid white;
+		border-radius: 5px;
 	}
+
+	#login a:hover, #signup a:hover, .nav-item a:hover {
+		transform: scale(1.1);
+		transition: 0.4s;	
+	}
+	
 
 	 /* <------ Slogan Slide in -------> */
 	 h5{
@@ -214,7 +217,7 @@
 
 }
 /* <-------- Ipad Responsive Design ----------> */
-@media screen and (min-width: 624px) and (max-width: 854px){ 
+@media screen and (min-width: 696px) and (max-width: 854px){ 
 	html{
 		font-size: 100%;
 	}
@@ -225,9 +228,7 @@
 		background: #FBF1EC;
 		font-family: 'Hind Siliguri',  sans-serif;
 	}
-	/* nav{
-		position: relative; 
-	} */
+
 	
 	/* <<<<<<--------- Navigation Styling ------>>>>>> */
 	header{
@@ -235,7 +236,6 @@
 	}
 	.navbar{
 		display: flex;
-		/* justify-content: space-between; */
 		align-items: center;
 	}
 
@@ -244,6 +244,7 @@
 		display: flex;
 		align-content: center;
 		height: 100%;
+		padding: 0;
 	}
 	.logo {
 		display: inline-block;
@@ -253,7 +254,6 @@
     	max-width: 250px;
 		vertical-align: top;
 		background-color: black;
-		/* margin-left: 1rem; */
 	}
 	.logo img{
 		align-self: left;
@@ -265,7 +265,6 @@
 		font-weight: bold;
 		text-decoration: none;
 		font-size: 2rem;
-		/* min-width: 5rem;  */
 		color: white;
 		display: flex;
 		justify-content: center;
@@ -273,7 +272,6 @@
 		align-items: center;
 		height: 100%;
 		width: 100%;
-		/* padding-left: 1rem; */
 	}
 	.hamburger {
 		display: none;
@@ -282,14 +280,13 @@
 		display: flex;
 		letter-spacing: 0.02rem;
 		font-size: 1rem;
-		margin: 0;
+		margin: 0 0 0 .6rem;
 		padding: 0;
-		min-width: 5rem;
 	} 
 	.nav-item a {
 		font-weight: bold;
 		text-decoration: none;
-		min-width: 6rem; 
+		min-width: 5rem; 
 		color: white;
 		display: flex;
 		justify-content: center;
@@ -297,11 +294,24 @@
 		align-items: center;
 		height: 100%;
 		width: 100%;
-		border-radius: 100px;
 	}
+	.nav-item:last-child {
+		margin-right: .1rem;
+	}
+
 	.nav-item a:hover{
 		background-color: white;
 		color: black;
+	}
+	
+	#login, #signup {
+		border: 2px solid white;
+		border-radius: 5px;
+	}
+
+	#login a:hover, #signup a:hover, .nav-item a:hover {
+		transform: scale(1.1);
+		transition: 0.4s;	
 	}
 
 	 /* <------ Slogan Slide in -------> */
@@ -431,7 +441,7 @@
 
 /* <-------- Smaller Ipad & Phone Responsive Design ----------> */
 /* need to include the hamburger */
-@media screen and (max-width: 623px){ 
+@media screen and (max-width: 695px){ 
 	html{
 		font-size: 100%;
 	}
@@ -442,9 +452,7 @@
 		background: #FBF1EC;
 		font-family: 'Hind Siliguri',  sans-serif;
 	}
-	/* nav{
-		position: relative; 
-	} */
+	
 	
 	/* <<<<<<--------- Navigation Styling ------>>>>>> */
 	header{
@@ -452,7 +460,6 @@
 	}
 	.navbar{
 		display: flex;
-		/* justify-content: space-between; */
 		align-items: center;
 	}
 
@@ -471,7 +478,6 @@
     	max-width: 250px;
 		vertical-align: top;
 		background-color: black;
-		/* margin-left: 1rem; */
 	}
 	.logo img{
 		align-self: left;
@@ -483,7 +489,6 @@
 		font-weight: bold;
 		text-decoration: none;
 		font-size: 2rem;
-		/* min-width: 5rem;  */
 		color: white;
 		display: flex;
 		justify-content: center;
@@ -491,7 +496,6 @@
 		align-items: center;
 		height: 100%;
 		width: 100%;
-		/* padding-left: 1rem; */
 	}
 	.hamburger {
 		max-height: 50px;
