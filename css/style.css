@@ -156,7 +156,7 @@
 		display: flex;
 		justify-content: center;
 		padding-top: 2%;
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	.twoColumn {
 		display: flex;
@@ -173,7 +173,6 @@
 		max-width: 10rem;
 	}
 	
-
 
 
 
@@ -535,7 +534,7 @@
 		position: absolute;
 		top: 50px;
 		left: 0;
-		height: calc(100vh - 650px);
+		height: 215px;
 		width: 100%;
 		margin-top: 23px;
 		
