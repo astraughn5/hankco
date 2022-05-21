@@ -7,3 +7,8 @@ selectWIP.forEach(link =>{
 function wip(){
 	alert('Alex is still developing this webpage, check back soon!');
 }
+
+
+function toggleMobileMenu(menu){
+	menu.classList.toggle('open')
+}
