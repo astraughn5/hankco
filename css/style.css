@@ -16,7 +16,7 @@
 	}
 	.navbar{
 		display: flex;
-		align-items: center;
+		align-items: baseline;
 	}
 
 	.nav-links {
@@ -205,10 +205,10 @@
 		border-radius: 100px;
 		margin: 3% 0;
 	}
-	footer span a:hover {
+	/* footer span a:hover {
 		color: black;
 		background-color: white;
-	}
+	} */
 	footer p {
 		margin: 0;
 	}
@@ -240,7 +240,7 @@
 	}
 	.navbar{
 		display: flex;
-		align-items: center;
+		align-items: baseline;
 	}
 
 	.nav-links {
@@ -280,7 +280,7 @@
 	.mobile-menu {
 		display: none;
 	}
-	 .nav-item {
+	 .nav-links .nav-item {
 		display: flex;
 		letter-spacing: 0.02rem;
 		font-size: 1rem;
@@ -303,10 +303,10 @@
 		margin-right: .1rem;
 	}
 
-	.nav-item a:hover{
+	/* .nav-item a:hover{
 		background-color: white;
 		color: black;
-	}
+	} */
 	
 	#login, #signup {
 		border: 2px solid white;
@@ -428,10 +428,10 @@
 		border-radius: 100px;
 		margin: 3% 0;
 	}
-	footer span a:hover {
+	/* footer span a:hover {
 		color: black;
 		background-color: white;
-	}
+	} */
 	footer p {
 		margin: 0;
 	}
@@ -686,10 +686,10 @@
 		border-radius: 100px;
 		margin: 3% 0;
 	}
-	footer span a:hover {
+	/* footer span a:hover {
 		color: black;
 		background-color: white;
-	}
+	} */
 	footer p {
 		margin: 0;
 	}
